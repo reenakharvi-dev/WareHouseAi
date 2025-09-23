@@ -1,5 +1,5 @@
 // TypeScript types for Warehouse Inspection Admin Panel
-
+//commented to check
 export type UserRole = "Admin" | "Inspector" | "Manager"
 
 export type InspectionStatus = "Pending" | "In Progress" | "Completed" | "Failed"
