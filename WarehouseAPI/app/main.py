@@ -9,6 +9,7 @@ from .routers import inspectionsDetails as inspectionsDetails_router
 from .routers import inspector as inspector_router
 from .routers import manager as manager_router
 from .routers import admin as admin_router
+from .routers import cropyear as crop_year_router
 from .routers import questions as questions_router
 from . import crud, schemas
 from fastapi.middleware.cors import CORSMiddleware
@@ -42,6 +43,7 @@ app.include_router(inspector_router.router)
 app.include_router(manager_router.router)
 app.include_router(admin_router.router)
 app.include_router(questions_router.router)
+app.include_router(crop_year_router.router)
 Base.metadata.create_all(bind=engine)
 
 # app = FastAPI(title="Warehouse Inspection API")

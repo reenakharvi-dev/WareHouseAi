@@ -93,4 +93,11 @@ class Commodity(BaseModel):
     class Config:
         orm_mode = True
 
-        
+class GetCropYear(BaseModel):
+    IdCrop_Year: int
+    CommodityMasterId: int
+    CropYear_name: str
+    Insert_Date: datetime.datetime
+
+    class Config:
+        orm_mode = True
